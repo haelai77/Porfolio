@@ -5,6 +5,7 @@ import styles from "./links.module.css";
 import NavLink from "./navlink/navlink";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ThemeToggle from "@/components/themeToggle/themeToggle";
 
 
 const links = [
@@ -22,7 +23,6 @@ const links = [
   }
 ];
 
-const stiffness = 30;
 
 // Define motion variants for open and closed states
 const menuVariants = {
@@ -34,25 +34,12 @@ const menuVariants = {
   },
 
   closed: {
-    width: "40px",
-    height: "40px",
+    width: "44px",
+    height: "44px",
     transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
   }
 }
 
-const perspective ={
-  initial: {
-    opacity: 0
-  },
-
-  enter:{
-    opacity: 1
-  },
-
-  exit:{
-    opacity: 0
-  }
-}
 
 const Links = () => {
   // open side menu state
@@ -62,9 +49,12 @@ const Links = () => {
     <div className={styles.container}>
 
       <div className={styles.links}>
+
         {links.map((link, i) => (
           <NavLink item={link} key={i} />
         ))}
+        
+        <ThemeToggle className={styles.themeToggle}/>
       </div>
 
       <div className={styles.motionContainer}>

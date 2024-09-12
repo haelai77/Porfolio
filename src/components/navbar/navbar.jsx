@@ -2,7 +2,7 @@ import Link from "next/link"
 import Links from "./links/links"
 import styles from "./navbar.module.css"
 import { Bungee_Outline } from "next/font/google"
-import { motion } from "framer-motion";
+import ThemeToggle from './../themeToggle/themeToggle';
 
 const logoFont = Bungee_Outline({
     subsets: ['latin'],
@@ -11,12 +11,14 @@ const logoFont = Bungee_Outline({
 
 const Navbar = async () => {
 
-
     return (
-        <div className={styles.container}>
-            <Link href="/" className={`${styles.logo} ${logoFont.className}`}>Leo Lai ☕</Link>
-            <Links />
-        </div>
+        <>
+            <div className={styles.container}>
+                    <Link href="/" className={`${styles.logo} ${logoFont.className}`}>Leo Lai ☕</Link>
+                    <Links />
+            </div>
+            <div className={styles.background}></div> 
+        </>
     )
 }
 
