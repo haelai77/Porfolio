@@ -1,17 +1,19 @@
-/* links.module.css */
+.container{
+  display: flex;
+  align-items: center;
+}
 
 .links {
   display: flex;
   align-items: center;
-  /* align-self: center; */
   gap: 10px;
 }
 
 .themeToggle{
-  padding: 20px;
+  padding: 25px;
 }
 
-.menuButton, .menuButtonContainer, .motionContainer, .menuLinks {
+.menuButton, .menuButtonContainer, .motionContainer, .menuLinks, .hidden{
   display: none;
 }
 
@@ -27,7 +29,9 @@
   }
 
   .motionMenu{
-    background-color: rgba(84, 124, 136, 0.7);
+    /* background-color: rgba(84, 124, 136, 0.7); */
+    transition: background-color var(--transition-duration);
+    background-color: var(--menu);
     position: absolute;
     align-self: center;
     top: -22px;
@@ -64,5 +68,10 @@
     width: fit-content;
     /* text-align: center; */
     padding: 10px;
+  }
+
+  .hidden{
+    display: flex;
+    margin-right: 55px;
   }
 }

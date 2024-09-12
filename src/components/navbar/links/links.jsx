@@ -46,46 +46,47 @@ const Links = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
 
-      <div className={styles.links}>
+      <div className={styles.container}>
+        <div className={styles.links}>
 
-        {links.map((link, i) => (
-          <NavLink item={link} key={i} />
-        ))}
-        
-        <ThemeToggle className={styles.themeToggle}/>
-      </div>
-
-      <div className={styles.motionContainer}>
-        <motion.div
-          className={styles.motionMenu}
-          animate={open ? "open" : "closed"}  // Use the open state to toggle animation
-          variants={menuVariants}  // Attach motion variants
-          initial="open"  // Set initial state
-          >
-          <div className={styles.menuLinks}>
-            {links.map((link, i) => (
-              <NavLink item={link} key={i}/>
-            ))}
+          <div className={styles.themeToggle}>
+            <ThemeToggle />
           </div>
 
-        </motion.div>
+          {links.map((link, i) => (
+            <NavLink item={link} key={i} />
+          ))}
+      
+        </div>
 
-        <Image
-          className={styles.menuButton}
-          src="/menu.png"
-          alt="Menu Icon"
-          width={30}
-          height={30}
-          onClick={() => setOpen((prev) => !prev)}
-        />
-
-      </div>
-
+        <div className={styles.hidden}>
+          <ThemeToggle/>
+        </div>
+          
+        <div className={styles.motionContainer}>
+          <motion.div
+            className={styles.motionMenu}
+            animate={open ? "open" : "closed"}  // Use the open state to toggle animation
+            variants={menuVariants}  // Attach motion variants
+            initial="open"  // Set initial state
+            >
+            <div className={styles.menuLinks}>
+              {links.map((link, i) => (
+                <NavLink item={link} key={i}/>
+              ))}
+            </div>
+          </motion.div>
+          <Image
+            className={styles.menuButton}
+            src="/menu.png"
+            alt="Menu Icon"
+            width={30}
+            height={30}
+            onClick={() => setOpen((prev) => !prev)}
+          />
+        </div>
     </div>
-
-
   );
 };
 

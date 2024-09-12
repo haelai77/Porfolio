@@ -26,7 +26,7 @@ const ThemeToggle = () => {
         }
     }
 
-    const icon_size = 30;
+    const icon_size = 25;
 
     return (
         <div onClick={handleTheme} className={styles.toggle}>

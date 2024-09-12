@@ -70,7 +70,8 @@
   height: 30px;
   left:0;
   position: relative;
-  filter: invert(var(--iconBrightness))
+  filter: invert(var(--iconBrightness));
+  transition: filter var(--transition-duration);
 }
 
 .iconLink{
@@ -89,6 +90,7 @@
   height: auto;
   filter: brightness(110%);
   box-shadow: 10px 10px var(--shadow);
+  transition-duration: var(--transition-duration);
 }
 
 .squareImg{

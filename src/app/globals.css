@@ -8,11 +8,11 @@
   --bg: #fae9cd;
   --accent1: #c1b8a9;
   --accent2: #628854;
+  --menu: #628854cc;
   --link-active: var(--bg);
   --text: black;
   --navtext: var(--bg);
   --textSoft: rgb(109, 109, 109);
-  --menu: white;
 
   --shadow: var(--accent1);
 
@@ -33,13 +33,13 @@
   --bg: #1a1a32;
   --accent1: #e8444a;
   --accent2: #7f71c5;
+  --menu: #7f71c5cc;
   --link-active: var(--bg);
   --text: white;
   --navtext: var(--bg);
   --textSoft: rgb(109, 109, 109);
-  --menu: white;
 
-  --shadow: #30305c;
+  --shadow: rgb(48, 48, 92);
 
   --navGradient1: var(--accent2);
   --navGradient2: var(--accent1);

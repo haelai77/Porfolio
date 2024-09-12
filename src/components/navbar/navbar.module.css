@@ -10,13 +10,15 @@
 .background{
     --border-width : 5px;
 
+    
+    
     align-self: center;
     width: 100vw;
     height: 80px;
     background: linear-gradient(to right, #628854 50%, #547C88 100%);
     position: absolute;
     border-bottom: var(--border-width) solid;
-    border-color: var(--shadow);
+    border-color: #c1b8a9; /* shadow */
     z-index: 1;
 }
 
@@ -28,7 +30,7 @@
     background: linear-gradient(to right, #7f71c5 50%, #e8444a 100%);
     position: absolute;
     border-bottom: var(--border-width) solid;
-    border-color: var(--shadow);
+    border-color: #30305c; /* shadow */
 
     z-index: 2;
     opacity: var(--opacity);
@@ -37,6 +39,7 @@
 
 
 .logo {
+    transition-duration: var(--transition-duration);
     font-size: 30px;
     font-weight: bold;
     color: var(--navtext)
