@@ -1,0 +1,88 @@
+/* Popup.css */
+.popup_container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--accent1);
+    color: var(--text);
+    padding: 20px;
+    border-radius: 10px;
+
+    gap: 10px;
+
+    font-weight: bold;
+}
+
+.todo{
+    align-self: flex-start;
+}
+
+.todolist{
+    padding-left: 20px;
+}
+
+.imgContainer {
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+/* Apply backdrop blur effect */
+.popup-container {
+    backdrop-filter: blur(5px);
+}
+
+.button {
+    /* CSS */
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: var(--accent2);
+    border-radius: 6px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.button:hover{
+    filter: brightness(70%);
+
+}

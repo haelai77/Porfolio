@@ -2,7 +2,7 @@
   container-name: content;
   container-type: inline-size;
   display: flex;
-  /* padding:25px; */
+  padding:25px;
   min-height: calc(100vh - 200px);
   width: 100%;
 }
