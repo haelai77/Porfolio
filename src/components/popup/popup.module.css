@@ -12,6 +12,7 @@
     gap: 10px;
     z-index: 1000;
 
+
     /* Apply backdrop blur effect */
     backdrop-filter: blur(5px);
 }
@@ -28,7 +29,10 @@
     background-color: var(--accent1);
     color: var(--text);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 5px solid;
+    border-color: var(--accent2);
+
 
     gap: 10px;
 
