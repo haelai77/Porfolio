@@ -39,7 +39,7 @@
   --navtext: var(--bg);
   --textSoft: rgb(109, 109, 109);
 
-  --shadow: rgb(48, 48, 92);
+  --shadow: #30305c;
 
   --navGradient1: var(--accent2);
   --navGradient2: var(--accent1);
