@@ -72,16 +72,32 @@ ul {
   list-style-position: inside;
 }
 
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: darkblue;
+}
+
+.page{
+  padding-top: 100px;
+}
+
 /* ############################ */
 
 .container {
+  display: flex;
+  flex-direction: column;
+  
+  height: 100vh;
   max-width: 1536px;
+  
   margin: auto;
   padding-left: 50px;
   padding-right: 50px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+
   justify-content: space-between;
   gap: 20px;
 }

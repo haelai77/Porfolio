@@ -18,11 +18,17 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning={true}>
         <body className={inter.className} suppressHydrationWarning={true}>
           <ThemeProvider>
-            <Popup/>
+            {/* <Popup/> */}
             <div className="container">
+              
               <Navbar/>
-              {children}
+
+              <div className="page">
+                {children}
+              </div>
+
               <Footer/>
+
             </div>
           </ThemeProvider>
         </body>

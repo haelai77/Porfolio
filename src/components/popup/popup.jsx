@@ -16,7 +16,6 @@ const Popup = () => {
     const [open, setOpen] = useState(true)
     
     if(!open){
-        console.log("here", open)
         return (null);
     }
 

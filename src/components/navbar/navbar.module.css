@@ -1,20 +1,37 @@
 .container {
+    position: fixed;
+
     display: flex;
+
+    /* top: 0px; */
+    left: 0px;
+
     height: 80px;
+    /* max-width: 1536px; */
+    width: 100%;
+
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    
     z-index: 2;
 }
 
 .background{
     --border-width : 5px;
-    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
     align-self: center;
+
     width: 100vw;
     height: 80px;
+
     background: linear-gradient(to right, #628854 50%, #547C88 100%);
-    position: absolute;
     border-bottom: var(--border-width) solid;
     border-color: #c1b8a9; /* shadow */
     z-index: 1;
@@ -22,11 +39,17 @@
 
 .background::before{    
     content:""; 
+    position:fixed;
+    top: 0px;
+    left: 0px;
+
     align-self: center;
+
     width: 100vw;
     height: calc(80px - var(--border-width));
+
     background: linear-gradient(to right, #7f71c5 50%, #e8444a 100%);
-    position: absolute;
+
     border-bottom: var(--border-width) solid;
     border-color: #30305c; /* shadow */
 
@@ -40,6 +63,5 @@
     transition-duration: var(--transition-duration);
     font-size: 30px;
     font-weight: bold;
-    color: var(--navtext)
+    color: var(--navtext);
 }
-

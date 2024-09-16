@@ -1,5 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Pacifico } from "next/font/google"
+
+const titleFont = Pacifico({
+    subsets: ['latin'],
+    weight: "400",
+})
+
 
 const Home = () => {
 	return (
@@ -9,7 +16,7 @@ const Home = () => {
 				<div className={styles.squareImg}>
 					<Image src="/upscaled-2.jpeg" alt="" style={{ objectFit: "cover" }} fill />
 				</div>			
-				<h1 className={styles.title}>
+				<h1 className={`${styles.title} ${titleFont.className}`}>
 					HEY THERE, I'M LEO!
 				</h1>
 
